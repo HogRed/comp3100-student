@@ -1,0 +1,6 @@
+{
+  "name": "COMP 3100 - Brassbridge Enginehouse",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "postCreateCommand": "sudo bash .devcontainer/provision.sh",
+  "customizations": { "vscode": { "extensions": ["ms-vscode.cpptools"] } }
+}

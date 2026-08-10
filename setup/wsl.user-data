@@ -1,0 +1,121 @@
+#cloud-config
+# ^ MUST be line 1: unlike Multipass (which parses this file as YAML itself),
+# WSL's cloud-init sniffs the format from the first line and silently discards
+# the whole file as "non-multipart userdata" if anything precedes #cloud-config.
+#
+# cloud-init user-data for the COMP-3100 WSL2 environment
+#
+# Ubuntu's official WSL images run cloud-init on first boot, so the same
+# cloud-config approach that provisions the Multipass VM (setup/cloud-init.yaml)
+# provisions WSL2 — one config, two launchers. WSL additions vs. the VM config:
+# the `users:` block + /etc/wsl.conf default user (replaces Ubuntu's interactive
+# first-launch user prompt) and the [boot] systemd flag (Labs 01-02 need
+# systemd as PID 1).
+#
+# Windows setup (PowerShell):
+#
+#     mkdir $env:USERPROFILE\.cloud-init -Force
+#     copy setup\wsl.user-data $env:USERPROFILE\.cloud-init\Ubuntu-24.04.user-data
+#     wsl --install Ubuntu-24.04 --no-launch
+#     wsl -d Ubuntu-24.04 -u root -- cloud-init status --wait
+#     wsl -d Ubuntu-24.04    # you are the 'ubuntu' user, toolchain ready
+#
+# perf note: linux-tools-$(uname -r) has no match for the Microsoft WSL kernel,
+# so the runcmd falls back to linux-tools-generic. Software events (page-faults,
+# task-clock) work via the versioned binary (/usr/lib/linux-tools/*/perf);
+# hardware counters (cycles, cache-misses) are unavailable under WSL2.
+
+users:
+  - name: ubuntu
+    gecos: COMP-3100 Apprentice Enginewright
+    groups: [adm, cdrom, dialout, dip, floppy, plugdev, sudo]
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+
+package_update: true
+package_upgrade: false  # speed: skip the full upgrade on first boot
+
+packages:
+  # the OS-observability tools the labs use
+  - strace
+  - lsof
+  - psmisc          # pstree, fuser, killall
+  - procps          # ps, top, free, vmstat, uptime (usually already there)
+  - htop
+  - sysstat         # iostat, mpstat, pidstat (used in scheduling/IO modules)
+  - time            # GNU /usr/bin/time -- the shell's `time` is a keyword
+                    # and has no `-v`; no Wave-1 work order needs it yet
+  - cron            # crontab(1) and the cron daemon. Stock Ubuntu 24.04
+                    # already ships this, so the entry is normally a no-op;
+                    # it is named so the course's dependencies all live in
+                    # one list. Week 1's third seal reads `man 1 crontab`;
+                    # Week 4 uses the tool. Under WSL the cron *service*
+                    # does not start on its own -- Week 4's work order says
+                    # when and how to start it.
+  - linux-tools-generic   # perf (software events only under WSL2 — see header)
+
+  # C toolchain for fork/exec/pthreads labs
+  - build-essential       # gcc, g++, make
+  - gdb
+  - valgrind
+  - pkg-config
+
+  # manual pages — students will live in here
+  - man-db
+  - manpages
+  - manpages-dev          # section 2/3 (syscalls, libc) man pages
+  - manpages-posix
+  - manpages-posix-dev
+
+  # general comfort
+  - vim
+  - nano
+  - tmux
+  - tree
+  - file
+  - less
+  - curl
+  - git
+  - unzip
+
+  # filesystem labs (Module 08)
+  - e2fsprogs       # mkfs.ext4, debugfs
+  - util-linux      # mount, lsblk, etc. (usually already there)
+
+write_files:
+  # Ubuntu's WSL image already ships /etc/wsl.conf with [boot] systemd=true;
+  # appending it again makes wsl.exe warn about a duplicated config key on
+  # every launch. Only the default-user section is ours to add.
+  - path: /etc/wsl.conf
+    append: true
+    content: |
+      [user]
+      default=ubuntu
+  - path: /etc/motd
+    content: |
+
+      ============================================================
+        HONOURABLE GUILD OF ENGINEWRIGHTS — BRASSBRIDGE STATION
+                            Ex Vapore, Ordo
+      ============================================================
+        Report for duty: see this week's work order.
+
+        man -k <topic>      search the manual
+        cat /proc/cpuinfo   the kernel's view of the CPU
+        strace -c ls        count this command's system calls
+      ------------------------------------------------------------
+      Lab notes:   ~/comp3100-student    (clone the repo here)
+      Submit to:   Canvas — logbook.md + case-notes.md
+      ============================================================
+
+runcmd:
+  # Refresh the man-page database so apropos / `man -k` work immediately
+  - [ mandb, -q ]
+  # Kernel-matched perf has no build for the WSL kernel; fall back to generic
+  # (same line as the VM config — the fallback branch is simply what fires here)
+  - [ sh, -c, "apt-get install -y linux-tools-$(uname -r) linux-tools-common || apt-get install -y linux-tools-generic linux-tools-common" ]
+  # Let the non-root 'ubuntu' user run perf (Ubuntu defaults paranoid to 4)
+  - [ sh, -c, "echo 'kernel.perf_event_paranoid = 1' > /etc/sysctl.d/99-perf.conf" ]
+  - [ sysctl, --system ]
+  # Pre-create a working directory
+  - [ install, -d, -o, ubuntu, -g, ubuntu, /home/ubuntu/comp3100 ]

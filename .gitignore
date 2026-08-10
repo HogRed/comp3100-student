@@ -1,0 +1,10 @@
+# Build artifacts -- produced by the labs, never committed.
+*.o
+a.out
+labs/week-02/starter/hello-brassbridge
+labs/week-02/starter/hello-brassbridge-vg
+labs/week-03/starter/pantograph
+labs/week-03/starter/zombie-maker
+
+# Course PDFs are distributed through Canvas and zyBooks, not through git.
+*.pdf

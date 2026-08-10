@@ -1,0 +1,97 @@
+# cloud-init for COMP-3100 Multipass VM
+#
+# Pre-installs the toolchain every Module-01-and-onward lab assumes.
+# Pass to Multipass with:
+#
+#     multipass launch --name comp3100 --cpus 2 --memory 2G --disk 10G --cloud-init setup/cloud-init.yaml 24.04
+#
+# Then shell in:
+#
+#     multipass shell comp3100
+
+#cloud-config
+
+package_update: true
+package_upgrade: false  # speed: skip the full upgrade on first boot
+
+packages:
+  # the OS-observability tools the labs use
+  - strace
+  - lsof
+  - psmisc          # pstree, fuser, killall
+  - procps          # ps, top, free, vmstat, uptime (usually already there)
+  - htop
+  - sysstat         # iostat, mpstat, pidstat (used in scheduling/IO modules)
+  - time            # GNU /usr/bin/time -- the shell's `time` is a keyword
+                    # and has no `-v`; no Wave-1 work order needs it yet
+  - cron            # crontab(1) and the cron daemon. Stock Ubuntu 24.04
+                    # already ships this, so the entry is normally a no-op;
+                    # it is named so the course's dependencies all live in
+                    # one list. Week 1's third seal reads `man 1 crontab`;
+                    # Week 4 uses the tool and the running service.
+  - linux-tools-generic   # perf, for VM module
+
+  # C toolchain for fork/exec/pthreads labs
+  - build-essential       # gcc, g++, make
+  - gdb
+  - valgrind
+  - pkg-config
+
+  # manual pages — students will live in here
+  - man-db
+  - manpages
+  - manpages-dev          # section 2/3 (syscalls, libc) man pages
+  - manpages-posix
+  - manpages-posix-dev
+
+  # general comfort
+  - vim
+  - nano
+  - tmux
+  - tree
+  - file
+  - less
+  - curl
+  - git
+  - unzip
+
+  # filesystem labs (Module 08)
+  - e2fsprogs       # mkfs.ext4, debugfs
+  - util-linux      # mount, lsblk, etc. (usually already there)
+
+write_files:
+  - path: /etc/motd
+    content: |
+
+      ============================================================
+        HONOURABLE GUILD OF ENGINEWRIGHTS — BRASSBRIDGE STATION
+                            Ex Vapore, Ordo
+      ============================================================
+        Report for duty: see this week's work order.
+
+        man -k <topic>      search the manual
+        cat /proc/cpuinfo   the kernel's view of the CPU
+        strace -c ls        count this command's system calls
+      ------------------------------------------------------------
+      Lab notes:   ~/comp3100/    (mount your host repo here)
+      Submit to:   Canvas — logbook.md + case-notes.md
+      ============================================================
+
+runcmd:
+  # Refresh the man-page database so apropos / `man -k` work immediately
+  - [ mandb, -q ]
+  # Install perf matched to THIS VM's running kernel. linux-tools-generic
+  # (in packages: above) tracks the archive's newest kernel ABI, which
+  # often differs from a freshly-launched image's $(uname -r), leaving
+  # `perf` unable to find its kernel half. Install the version-matched
+  # tools, falling back to the metapackage if the exact build isn't up yet.
+  - [ sh, -c, "apt-get install -y linux-tools-$(uname -r) linux-tools-common || apt-get install -y linux-tools-generic linux-tools-common" ]
+  # Let the non-root 'ubuntu' user run perf (Ubuntu defaults paranoid to 4)
+  - [ sh, -c, "echo 'kernel.perf_event_paranoid = 1' > /etc/sysctl.d/99-perf.conf" ]
+  - [ sysctl, --system ]
+  # Pre-create a working directory
+  - [ install, -d, -o, ubuntu, -g, ubuntu, /home/ubuntu/comp3100 ]
+
+final_message: |
+  COMP-3100 VM ready.  $UPTIME seconds from launch to login.
+  Run `multipass shell comp3100` to enter the speaking-tube console.

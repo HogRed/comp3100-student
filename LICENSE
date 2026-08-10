@@ -1,0 +1,31 @@
+COMP 3100 — Operating Systems · "The Case Files of the Grand Analytical Engine"
+Copyright (c) 2026 Joe Faith, Harding University
+
+Licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International licence
+(CC BY-NC-SA 4.0).
+
+Full text:  https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+Summary:    https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+In plain terms, you may:
+
+  - use, copy, and keep these materials, including after the course ends;
+  - adapt them, including forking this repository for your own coursework;
+  - share them onward, provided you credit the source, say what you
+    changed, do not sell them, and license your version the same way.
+
+WHAT THIS LICENCE DOES NOT COVER. This repository references course
+material that is not ours to license, and none of it is included here:
+
+  - the zyBooks text and its Chapter 12 projects, which are licensed to
+    you directly by zyBooks;
+  - the department's programming project specifications, which remain
+    the work of their author and are linked, never reproduced;
+  - Tanenbaum, "Modern Operating Systems" (4th ed.), which is optional
+    and is not distributed with this course.
+
+Nothing here grants any right in those works.
+
+STUDENT WORK. Your logbook, your case notes, your sealed verdict, and
+any code you write are YOURS. This licence makes no claim on them.
