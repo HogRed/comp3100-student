@@ -87,9 +87,20 @@ disagrees with the schedule, the schedule wins.
 ## Keeping your own work, and getting each new week
 
 Clone this repository **once**, at Step 0, and work inside that clone all
-semester. Commit your `logbook.md` and `case-notes.md` as you go —
-especially on the Codespaces path, where an idle codespace is eventually
-deleted along with anything you never pushed.
+semester. Commit your `logbook.md` and `case-notes.md` as you go — `git
+commit` is local, it never sends anything anywhere, and it costs you
+nothing to do often.
+
+**Keep a copy somewhere that is not your machine.** A laptop can die the
+week a work order is due, and on the Codespaces path an idle codespace is
+eventually deleted along with every commit inside it. Two ways to be
+safe, and you only need one:
+
+- **Your weekly Canvas upload already is one.** Turn in `logbook.md` and
+  `case-notes.md` every Friday and the worst a dead machine costs you is
+  the current week.
+- **Or keep your own backup repository on GitHub** — see below. This is
+  entirely optional.
 
 Each week's work order lands here on the Monday it is assigned, and
 corrections land whenever they are found. So this repository will look
@@ -125,6 +136,52 @@ two-minute fix and a good thing to have seen once.
 
 Do **not** re-clone to get a new week. A second clone leaves your
 logbook behind in the first one.
+
+## Your own copy on GitHub — optional, and never graded
+
+You do not need a GitHub account for this course. Cloning and pulling
+works exactly as described above with no account at all, and **nothing
+here is graded** — your Canvas upload is the submission, always. This
+section is for students who would rather their work lived somewhere
+other than one laptop.
+
+**Make your own repository, and keep it private.** On GitHub, create a
+new **private** repository — call it `comp3100-work` or anything you
+like — and create it *empty*: no README, no .gitignore, no licence.
+Then, from inside the clone you already have:
+
+```sh
+git remote add backup https://github.com/YOUR-USERNAME/comp3100-work.git
+git push -u backup main
+```
+
+That is the whole setup. From then on your week is two commands:
+
+```sh
+git pull                 # the course -- new work order, corrections
+git push backup main     # you -- your logbook and case notes, saved
+```
+
+`origin` still means this course repository and `backup` means yours, so
+pulling each new week works exactly as it always did.
+
+**Private matters, and not for etiquette.** Your `case-notes.md` is your
+running theory of the season's case and your `logbook.md` holds your
+reflection answers. A public repository hands both to the rest of the
+cohort, which is a collaboration-policy problem for you rather than for
+them. Keep it private and it is simply your own safe copy.
+
+**Do not fork this repository to do it.** Forking is the obvious move and
+it is the wrong one here: GitHub does not let you make a fork of a public
+repository private, so a forked course repo publishes your answers to
+everyone, permanently. A separate private repository, as above, is the
+version that keeps your work yours.
+
+The first `git push` will ask who you are. GitHub's own instructions for
+that are better and fresher than anything printed here — see
+<https://docs.github.com/get-started/git-basics/caching-your-github-credentials-in-git>.
+On the Codespaces path you are already signed in and it will simply work.
+If it fights you, bring it to studio; it is not worth an evening alone.
 
 ```
 =================================================================

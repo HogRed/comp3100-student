@@ -353,9 +353,15 @@ install on — a supported path, not a workaround.
 
 Three honest caveats, because this room really is different:
 
-- **Push your work every session.** A codespace that sits idle for 30
-  days is deleted, along with anything you didn't commit and push. Make
-  `git add / commit / push` your goodbye ritual.
+- **Get your work off this machine every session.** A codespace that
+  sits idle for 30 days is deleted, and everything inside it goes too —
+  including commits you made but never copied anywhere else. Committing
+  alone does not save you here. Note that you **cannot** push to the
+  course repository; it is read-only to you. Your weekly Canvas upload
+  is the copy that matters, and if you would like a second one, the
+  README explains how to keep your own private backup repository on
+  GitHub — optional, never graded, and easiest on this path because you
+  are already signed in.
 - **The free allowance is generous but finite** (about 60 hours/month
   on the small machine). Stop your codespace when you're done; it also
   auto-stops after idle.
@@ -364,7 +370,8 @@ Three honest caveats, because this room really is different:
   in the lab text. For everything else — the shell, C programming,
   processes, threads — this room behaves identically.
 - **Semester's end:** delete your codespace at
-  <https://github.com/codespaces> (your pushed work stays in the repo).
+  <https://github.com/codespaces> — but upload anything you still want
+  to Canvas first, because deleting it takes the contents with it.
 
 ---
 
