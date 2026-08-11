@@ -211,6 +211,11 @@ Every week splits the same three ways:
 | **Milestone narrative** — what you did at each milestone and what it means, in your own words, plus that week's case-notes entry | **40%** |
 | **Reflections** — the closing prompts in the logbook, plus the week's short answers where a work order asks for them | **30%** |
 
+Individual assignments may use different raw rubric totals, but every
+score is normalized to a 100-point scale in Canvas, and it is the
+category weights in the table above — not any one assignment's raw point
+total — that determine how much a score moves your course grade.
+
 Your course grade is the weighted sum, rounded once at the end to the
 nearest whole percent, on the standard scale:
 
