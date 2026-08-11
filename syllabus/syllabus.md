@@ -342,7 +342,7 @@ time. That leaves roughly three hours a week for the things without a
 due date attached — rereading a chapter, going back over a command that
 went past you, exam study — and for the commissions, which is exactly
 why a week with a commission due runs heavier. The commissions are
-assigned three to five weeks ahead for that reason. Check
+assigned two to five weeks ahead for that reason. Check
 [`schedule.md`](schedule.md) at the start of the semester and put the
 five commission due dates in your own calendar.
 

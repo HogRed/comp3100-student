@@ -37,6 +37,8 @@ not Canvas, and are due at **11:59 pm** on the date listed below.
 
 Finals week is **December 7–11**. Guild Examination II meets in the
 registrar's assigned slot, announced in class and posted in Canvas.
+**Nothing else is due that week** — no work order, no commission, no
+reading. The last deadline of the semester is Friday, December 4.
 
 ---
 
@@ -57,10 +59,10 @@ registrar's assigned slot, announced in class and posted in Canvas.
 | 11 | Oct 26 – 30 | **The Ledger Halls** | File systems: inodes, links, mounts, loop-mounting a disk image, recovering deleted files | Ch 8 | Work Order 11 | **Regular Expressions due** (Fri Oct 30) · **Versioning assigned** (12.5) |
 | 12 | Nov 2 – 6 | **The Pneumatic Post** | Applied I/O: pipes, redirection, `/dev`, FIFOs | — *(Ch 9 optional)* | Work Order 12 | — |
 | 13 | Nov 9 – 13 | **The Brass Keys** | Applied security: users and groups, permissions, `setuid`, `sudo`, authentication logs | — *(Ch 10 optional)* | Work Order 13 | **A Good Sport assigned** (12.4) |
-| 14 | Nov 16 – 20 | **The Aetheric Exchange** | Ports and sockets: auditing every listening service with `ss`/`netstat` | — *(Ch 11 optional)* | Work Order 14 | — |
+| 14 | Nov 16 – 20 | **The Aetheric Exchange** | Ports and sockets: auditing every listening service with `ss`/`netstat` | — *(Ch 11 optional)* | Work Order 14 | **Versioning due** (Fri Nov 20) |
 | — | Nov 23 – 27 | *Thanksgiving break — the Engine rests* | No class, nothing due | — | — | — |
-| 15 | Nov 30 – Dec 4 | **The Reveal & the Exhibition** | Mon: the reveal · Wed: the finale · Fri: epilogue and the Exhibition (last class) | — | Work Order 15 · **sealed verdict due Mon Nov 30, start of class** | **Versioning due** (Fri Dec 4) |
-| Finals | Dec 7 – 11 | **Guild Examination II** | Final exam: Ch 6–8 plus the applied weeks (12–14), lightly | — | — | **A Good Sport due** (Fri Dec 11) |
+| 15 | Nov 30 – Dec 4 | **The Reveal & the Exhibition** | Mon: the reveal · Wed: the finale · Fri: epilogue and the Exhibition (last class) | — | Work Order 15 · **sealed verdict due Mon Nov 30, start of class** | **A Good Sport due** (Fri Dec 4) |
+| Finals | Dec 7 – 11 | **Guild Examination II** | Final exam: Ch 6–8 plus the applied weeks (12–14), lightly | — | *(nothing due — the exam only)* | — |
 
 **Reading the table.** "Work Order *NN*" means the week's lab: submit
 `logbook.md` and your updated `case-notes.md` on Canvas by 11:59 pm
@@ -88,13 +90,15 @@ calendar placement below. **All five are submitted in zyBooks.**
 | 1 | 12.1 | Mr. Kureos | *The Census of the Enginehouse* | Mon Aug 24 (Wk 2) | **Fri Sep 18** (Wk 5) |
 | 2 | 12.2 | HUSH | *The Speaking-Tube Console* | Mon Sep 14 (Wk 5) | **Fri Oct 16** (Wk 9) |
 | 3 | 12.3 | Regular Expressions | *The Pattern Loom* | Mon Oct 12 (Wk 9) | **Fri Oct 30** (Wk 11) |
-| 4 | 12.5 | Simple Versioning System | *The Revision Registry* | Mon Oct 26 (Wk 11) | **Fri Dec 4** (Wk 15) |
-| 5 | 12.4 | A Good Sport | *The Exchange Audit* | Mon Nov 9 (Wk 13) | **Fri Dec 11** (finals week) |
+| 4 | 12.5 | Simple Versioning System | *The Revision Registry* | Mon Oct 26 (Wk 11) | **Fri Nov 20** (Wk 14) |
+| 5 | 12.4 | A Good Sport | *The Exchange Audit* | Mon Nov 9 (Wk 13) | **Fri Dec 4** (Wk 15) |
 
 An **open HUSH workshop** runs Friday, Oct 9 — bring your half-finished
 shell and questions. The last two commissions run long on purpose: they
-are due after the applied weeks (12–15), which carry no required
-reading, so the load moves from the reading to the projects.
+run through the applied weeks (12–15), which carry no required reading,
+so the load moves from the reading to the projects. Each gets about
+twenty-five days, and they land a fortnight apart — **neither one falls
+in finals week**, where nothing is due but Exam II.
 
 ## Exams
 
@@ -116,9 +120,10 @@ followed the story.
 - **Exam I:** Wednesday, October 7
 - **Thanksgiving break (no class):** November 23–27
 - **Sealed verdict due:** Monday, November 30, start of class
-- **Last class:** Friday, December 4
+- **Last class:** Friday, December 4 — also the semester's last deadline
+  (Work Order 15 and Commission 5)
 - **Finals week:** December 7–11 · Exam II slot set by the registrar,
-  announced in class and posted in Canvas
+  announced in class and posted in Canvas · **nothing else due**
 
 For grading weights, the late policy, and everything else about how the
 course is run, see [`syllabus.md`](syllabus.md).
