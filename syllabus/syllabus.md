@@ -10,7 +10,7 @@
 | **Meets** | Monday / Wednesday / Friday · 1:00 – 1:50 pm · Science 200 |
 | **Prerequisites** | COMP 2450; and COMP 2680 **or** (EENG 2400 and EENG 2400L) |
 | **Instructor** | Joe Faith, D.Eng. · Science 209 · <jfaith@harding.edu> |
-| **Office hours** | Mon / Wed / Fri 9–10 am, 12–1 pm, 2–3 pm · Tue 9 am – 12 pm · Thu 8–9:30 am |
+| **Office hours** | Mon / Wed 7–8 am, 9–10 am, 12–1 pm, 2–3 pm · Tue 9–11 am · Fri 9–10 am, 12–1 pm, 2–3 pm · Thu by appointment |
 | **Course site** | **Canvas** — announcements, assignments, grades, and the zyBooks and student-repo links |
 | **Textbook** | zyBooks — enrollment link and join code in Canvas |
 | **Submission** | Weekly work orders → **Canvas** · The five commissions → **zyBooks** |
@@ -453,15 +453,15 @@ needed, and no question too small:
 
 | Day | Hours |
 |---|---|
-| Monday | 9:00 – 10:00 am · 12:00 – 1:00 pm · 2:00 – 3:00 pm |
-| Tuesday | 9:00 am – 12:00 pm |
-| Wednesday | 9:00 – 10:00 am · 12:00 – 1:00 pm · 2:00 – 3:00 pm |
-| Thursday | 8:00 – 9:30 am |
+| Monday | 7:00 – 8:00 am · 9:00 – 10:00 am · 12:00 – 1:00 pm · 2:00 – 3:00 pm |
+| Tuesday | 9:00 – 11:00 am |
+| Wednesday | 7:00 – 8:00 am · 9:00 – 10:00 am · 12:00 – 1:00 pm · 2:00 – 3:00 pm |
+| Thursday | By appointment |
 | Friday | 9:00 – 10:00 am · 12:00 – 1:00 pm · 2:00 – 3:00 pm |
 
-That is thirteen and a half hours a week, most of it wrapped around our
-1:00 class. Use it. If none of it fits your schedule, email me and we
-will find a time that does.
+That is thirteen hours a week, most of it wrapped around our 1:00 class,
+plus Thursday by appointment. Use it. If none of it fits your schedule,
+email me and we will find a time that does.
 
 Everything else:
 
