@@ -147,8 +147,7 @@ for t in gcc g++ make gdb strace valgrind pkg-config mkfs.ext4 debugfs man; do
 done
 
 # GNU time, not the bash keyword -- installed for parity with
-# setup/cloud-init.yaml and .devcontainer/provision.sh; no Wave-1 work order
-# uses `/usr/bin/time -v` yet.
+# setup/cloud-init.yaml; no Wave-1 work order uses `/usr/bin/time -v` yet.
 if [ -x /usr/bin/time ]; then
   printf '  ok   /usr/bin/time\n'
 else

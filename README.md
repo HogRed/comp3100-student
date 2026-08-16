@@ -39,11 +39,15 @@ Do this first, before the first work order.
 > **→ [`setup/getting-started.md`](setup/getting-started.md)**
 
 It picks the right doorway for the machine you already own — Windows
-(WSL2), macOS (Multipass), native Linux, or a browser (GitHub
-Codespaces) — and lands every one of them in the same Ubuntu 24.04 room
-with the same tools. About 15 minutes, most of it download. Finish with
-the smoke test at the bottom of that page; if all four checks pass, you
-are admitted.
+(WSL2), macOS (Multipass), or native Linux — and lands every one of them
+in the same Ubuntu 24.04 room with the same tools. About 15 minutes,
+most of it download. Finish with the smoke test at the bottom of that
+page; if all four checks pass, you are admitted.
+
+If none of the three fits the machine you own — a Chromebook, a tablet,
+a machine you have no administrator rights to — see your instructor in
+the first week. That is a five-minute conversation, and it is the right
+move rather than a lost evening.
 
 ## What's in here
 
@@ -55,7 +59,6 @@ are admitted.
 | `labs/templates/` | `logbook-template.md` and `case-notes-template.md` — copy these once, keep them all semester. |
 | `labs/appendix-c-refresher.md` | The C refresher, for when a work order asks for C and it has been a while. |
 | `commissions/` | The Guild Commissions — the department's five programming projects, submitted in zyBooks. Each cover page lands here as it is assigned. |
-| `.devcontainer/` | Powers the browser/Codespaces path. You never edit it. |
 
 ## How a week runs
 
@@ -92,9 +95,9 @@ commit` is local, it never sends anything anywhere, and it costs you
 nothing to do often.
 
 **Keep a copy somewhere that is not your machine.** A laptop can die the
-week a work order is due, and on the Codespaces path an idle codespace is
-eventually deleted along with every commit inside it. Two ways to be
-safe, and you only need one:
+week a work order is due, and it will not check your deadline first.
+`git commit` protects you from your own edits; it does not protect you
+from the disk. Two ways to be safe, and you only need one:
 
 - **Your weekly Canvas upload already is one.** Turn in `logbook.md` and
   `case-notes.md` every Friday and the worst a dead machine costs you is
@@ -180,7 +183,6 @@ version that keeps your work yours.
 The first `git push` will ask who you are. GitHub's own instructions for
 that are better and fresher than anything printed here — see
 <https://docs.github.com/get-started/git-basics/caching-your-github-credentials-in-git>.
-On the Codespaces path you are already signed in and it will simply work.
 If it fights you, bring it to studio; it is not worth an evening alone.
 
 ```

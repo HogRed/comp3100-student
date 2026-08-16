@@ -11,8 +11,10 @@ machine you own, and they all open onto the same room:
 - **Windows** (Home editions included) → WSL2, built into Windows
 - **macOS** → a small Ubuntu VM, via Multipass
 - **Linux** → your own package manager; no VM needed
-- **Chromebook, a machine you don't have admin rights on, or anything
-  that defeated the three above** → GitHub Codespaces, in the browser
+
+On a Chromebook, a tablet, or a machine you don't have administrator
+rights to? None of the three will work — see your instructor in the
+first week and you will be sorted out.
 
 Budget about **15 minutes** the first time, most of it download. If
 setup fights you, that is an ordinary event with a known fix — the
@@ -27,9 +29,6 @@ by symptom for exactly that reason.
 | `wsl.user-data` | Windows only. You copy it into place in step A.2; Ubuntu reads it on first boot and builds your toolchain with no prompts. The guide gives the command. |
 | `cloud-init.yaml` | macOS only. You name it in the `multipass launch` line in step B.2. Same tool list as `wsl.user-data`. |
 | `wsl2-setup.sh` | Windows repair only. Run it if the first-boot setup didn't finish. Safe to run again. |
-
-The browser path needs nothing from this folder — it is driven by
-`../.devcontainer/`.
 
 You never have to edit any of these files to take the course. Open them
 if you're curious what your environment is actually made of: they are

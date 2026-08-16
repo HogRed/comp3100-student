@@ -59,8 +59,8 @@ By Friday you will be able to:
 **P1 — A working Linux environment.** Follow
 [`setup/getting-started.md`](../../setup/getting-started.md) (about 15
 minutes, most of it download). Every path — Windows/WSL2,
-macOS/Multipass, native Linux, browser/Codespaces — lands in the same
-Ubuntu 24.04 room with the same tools.
+macOS/Multipass, native Linux — lands in the same Ubuntu 24.04 room
+with the same tools.
 
 **P2 — This folder, open in your Linux shell.** Everything below runs
 from the `labs/week-01` folder of the course repo. Open your Linux
@@ -86,8 +86,6 @@ If you're on macOS/Multipass and mounted your Mac's clone into the VM
 ```sh
 cd ~/comp3100/labs/week-01
 ```
-
-Browser students: see the Codespaces box near the end.
 
 **P3 — Report for duty.** One command stages your bench for the week:
 
@@ -159,7 +157,7 @@ output — you'll write one sentence about each in your logbook.
 uname -a
 ```
 
-Expected (WSL2 shown; Mac and Codespaces differ in the middle — fine):
+Expected (WSL2 shown; Mac and native Linux differ in the middle — fine):
 
 ```
 Linux YOURPC 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC ... x86_64 GNU/Linux
@@ -242,7 +240,7 @@ sentence per smoke-test command: what did it prove about your machine?
 > - Run `pwd`. It should end in `labs/week-01`; if not, Provisions P2.
 > - `make: command not found` or `uname` prints nothing sensible?
 >   You're not in your Linux shell — type `wsl` (Windows) or open your
->   VM/codespace terminal, then P2.
+>   VM's terminal, then P2.
 > - One of the four smoke commands failed? Go straight to
 >   **Troubleshooting** in `setup/getting-started.md` — it's organized
 >   by exact symptom, and "a tool is missing" has a one-line fix.
@@ -528,8 +526,7 @@ sentence and your `crontab` sentence.
 >   scrolls back, `/word` searches inside the page.
 > - `No manual entry for write in section 2`? Your manual pages are
 >   incomplete — run the "a tool is missing" fix in
->   `setup/getting-started.md` Troubleshooting (Codespaces students:
->   `sudo bash /workspaces/comp3100-student/.devcontainer/provision.sh`).
+>   `setup/getting-started.md` Troubleshooting.
 > - `man -k` returns `nothing appropriate`? Run `sudo mandb`, then try
 >   again.
 > - The seal check failed but both pages opened? Make sure you're in
@@ -564,23 +561,6 @@ polished one you borrowed.
    kernel call in section 2. Why is a sectioned manual a sensible
    design — and when this week did the section number save you (or
    cost you) time?
-
-## Working from the browser (Codespaces)?
-
-> Same commands, same seals, no exceptions this week. Your repo lives
-> at `/workspaces/comp3100-student`, so Provisions P2 becomes:
->
-> ```sh
-> cd /workspaces/comp3100-student/labs/week-01
-> ```
->
-> One cosmetic difference: the Guild's greeting is added to
-> `~/.bashrc`, and `~/.bashrc` is read only when a terminal *starts* —
-> so the greeting appears in terminals opened **after** you report for
-> duty, never in one that was already open. (That's true on every
-> path, WSL2 included — don't wait for a banner that isn't coming to
-> an old terminal.) If `man 2 read` is missing, run this once:
-> `sudo bash /workspaces/comp3100-student/.devcontainer/provision.sh`
 
 ## Turn it in
 

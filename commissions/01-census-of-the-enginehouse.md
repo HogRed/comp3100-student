@@ -170,10 +170,10 @@ Field five is the real name. On the **WSL2** path the course's config
 file sets it to `COMP-3100 Apprentice Enginewright`, so the census
 reports `COMP-3100: 1`. On **Multipass** you are the stock `ubuntu`
 account and it reports `Ubuntu: 1`. On **native Linux** it reports
-whatever real name your own account carries. And on the **Codespaces**
-path nothing sets that field at all — if it is empty, rule two skips
-you and you appear nowhere. That is not a bug in your program; it is
-your program obeying the blank-name rule.
+whatever real name your own account carries — and on a good many
+distributions nothing ever sets that field, so it is simply empty. If
+yours is empty, rule two skips you and you appear nowhere. That is not
+a bug in your program; it is your program obeying the blank-name rule.
 
 Predict your output from the line you just printed, then run the census
 and check. Whatever it says, the Guild has counted you. Welcome to the

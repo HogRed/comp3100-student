@@ -113,25 +113,27 @@ August 19.
 edition.** An excellent reference and a good read if a topic grabs you.
 Nothing is ever assigned from it, and you do not need to buy it.
 
-**Required — a computer that can reach the internet.** No purchase
-beyond the zyBook is required. If your own machine cannot run the course
-environment, the browser-based path below needs nothing but a browser and
-a free GitHub account, and works on anything — a Chromebook, a lab
-machine, a borrowed laptop.
+**Required — a computer that can run the course environment.** No
+purchase beyond the zyBook is required, and any Windows, macOS, or Linux
+machine from the last several years will do. If yours cannot — a
+Chromebook, a tablet, or a machine you have no administrator rights
+to — tell me in the first week and we will find you a bench. Do not buy
+hardware for this course before you have talked to me.
 
 ## Your Linux environment
 
 Everyone in this class works in the same room: **Ubuntu 24.04**, same
-tools, same versions. It costs nothing, and the last row of this table
-exists so that nobody has to buy hardware to take this course. You get
-there through whichever door fits the machine you already own:
+tools, same versions. It costs nothing. You get there through whichever
+door fits the machine you already own:
 
 | Your machine | Your path |
 |---|---|
 | Windows 10 or 11 (any edition, Home included) | **WSL2** — built into Windows |
 | macOS 13.3+ (Intel or Apple Silicon) | **Multipass** — a small virtual machine |
 | Linux | **Native packages** |
-| A Chromebook, a machine you can't install on, or anything that defeats the other three | **GitHub Codespaces** — in the browser |
+
+If none of the three fits your machine, see me in the first week rather
+than buying anything.
 
 Follow [`setup/getting-started.md`](../setup/getting-started.md). Total
 time for the first setup is about **15 minutes**, most of it download.

@@ -9,8 +9,10 @@
 > You are issued **one environment** and the doorway proper to the
 > machine you already own. Apprentices on Windows are admitted through a
 > door Microsoft built into Windows itself. Apprentices on a Mac are
-> issued a small engine of their own. Should your machine refuse both,
-> a third door asks for nothing but a browser.*
+> issued a small engine of their own. Apprentices already on Linux are,
+> in a sense, home. Should your machine refuse all three, present
+> yourself to the Porter and say so early — the charter obliges him to
+> find you a bench, and it obliges him to do it before the work is due.*
 >
 > *Whichever door admits you, the room beyond is the same:
 > **Ubuntu 24.04**, the same tools, the same bench as the apprentice two
@@ -25,8 +27,9 @@
 ## What you'll have at the end of this guide
 
 There is a door here for whatever machine you already own — and if every
-installed path defeats yours, the browser path runs this whole course on
-a Chromebook. A setup that fights you is a normal event with a known
+one of them defeats yours, come to your instructor and you will be sorted
+out with something that works. Ask early rather than the night a work
+order is due. A setup that fights you is a normal event with a known
 fix, not a verdict on whether you belong in this room; the
 Troubleshooting section at the bottom is arranged by symptom for exactly
 that reason.
@@ -34,8 +37,7 @@ that reason.
 - A **Ubuntu 24.04 LTS** Linux environment with every tool the course's
   labs use, pre-installed: `strace`, `gcc`, `gdb`, `valgrind`, `lsof`,
   `htop`, `pstree`, full manual pages, and more.
-- A single command (or, on Path D, a browser tab) that drops you into
-  a Linux shell.
+- A single command that drops you into a Linux shell.
 - A near-identical environment to every other student in the class.
   (Apple Silicon Macs differ only in CPU architecture; see the note
   under macOS.)
@@ -45,15 +47,21 @@ Total time, first setup: **~15 minutes**, most of it download.
 ## Pick your path
 
 Find the machine you actually have in front of you and take that row.
-You need one path, not three — and the last row exists precisely so that
-nobody here is stopped by hardware they cannot do anything about.
+You need one path, not three.
 
 | Your machine | Your path |
 |---|---|
 | **Windows 10 or 11** — any edition, Home included | **Path A — WSL2** (below) |
 | **macOS 13.3+** — Intel or Apple Silicon | **Path B — Multipass** |
 | **Linux** | **Path C — native packages** (or Multipass) |
-| **Chromebook**, a machine you don't have admin rights on, or anything that defeats Paths A–C | **Path D — Codespaces**, in the browser |
+
+**None of these three fits the machine you own?** If you are on a
+Chromebook or a tablet, or on a machine you don't have administrator
+rights to, come and see your instructor in the first week. There is a
+way to get you a working bench, and finding it is a five-minute
+conversation rather than a lost evening. Nobody here is stopped by
+hardware they cannot do anything about — but you have to say so, and
+early beats the night a work order is due.
 
 Everyone starts with Step 0.
 
@@ -195,8 +203,8 @@ Multipass is made by Canonical (the company behind Ubuntu). It is free,
 open-source, and gives you a small Ubuntu virtual machine. Requires
 **macOS 13.3 (Ventura) or later**, Intel or Apple Silicon. (Older
 macOS — e.g. 12 Monterey, the ceiling for many 2015–2017 Intel
-MacBooks — can't run Multipass; use Path D, or see *UTM* under
-Troubleshooting.)
+MacBooks — can't run Multipass; see *UTM* under Troubleshooting, and
+tell your instructor if it fights you.)
 
 ### B.1 — Install Multipass
 
@@ -332,49 +340,6 @@ for a removable drive, `sudo snap connect multipass:removable-media`.)
 
 ---
 
-## Path D — Codespaces (browser only; the escape hatch)
-
-If you're on a Chromebook, a locked-down machine, or Paths A–C defeated
-you and the lab is due: the course repo carries a **devcontainer** that
-builds the same toolchain on GitHub's servers, and you use it entirely
-from a browser.
-
-Landing here is not a demotion. This door is what keeps the course
-independent of the hardware you can afford, borrow, or get permission to
-install on — a supported path, not a workaround.
-
-1. Create a free GitHub account if you don't have one (you'll want one
-   for this course anyway).
-2. On the course repo page: **Code** → **Codespaces** → **Create
-   codespace**. First build takes a few minutes; after that it's
-   seconds.
-3. A VS Code editor opens in your browser with a Linux terminal at the
-   bottom. Run the **smoke test** below.
-
-Three honest caveats, because this room really is different:
-
-- **Get your work off this machine every session.** A codespace that
-  sits idle for 30 days is deleted, and everything inside it goes too —
-  including commits you made but never copied anywhere else. Committing
-  alone does not save you here. Note that you **cannot** push to the
-  course repository; it is read-only to you. Your weekly Canvas upload
-  is the copy that matters, and if you would like a second one, the
-  README explains how to keep your own private backup repository on
-  GitHub — optional, never graded, and easiest on this path because you
-  are already signed in.
-- **The free allowance is generous but finite** (about 60 hours/month
-  on the small machine). Stop your codespace when you're done; it also
-  auto-stops after idle.
-- **A few later labs poke the kernel in ways a container doesn't
-  allow.** Those labs will list their Codespaces alternate steps right
-  in the lab text. For everything else — the shell, C programming,
-  processes, threads — this room behaves identically.
-- **Semester's end:** delete your codespace at
-  <https://github.com/codespaces> — but upload anything you still want
-  to Canvas first, because deleting it takes the contents with it.
-
----
-
 ## The smoke test (every path)
 
 Whatever door you came through, prove the room works. In your Linux
@@ -438,8 +403,10 @@ wsl --install Ubuntu-24.04 --no-launch --web-download
 date — you skipped A.1. Run `wsl --update`, then retry.
 
 **No administrator rights on this machine** (school- or
-parent-managed). You genuinely cannot install WSL. Use **Path D** —
-that's what it's for.
+parent-managed). You genuinely cannot install WSL, and no amount of
+persistence will change that. Come and see your instructor in the first
+week — this is a solvable problem, but not one you can solve alone at
+11pm.
 
 **`cloud-init status` reported `error` instead of `done`.** Usually a
 network hiccup during the package install. See exactly what failed with
@@ -477,8 +444,8 @@ the wreckage (`multipass delete comp3100 && multipass purge`) and retry
 on a different network (captive portals and strict campus wifi can
 stall the image download).
 
-**macOS older than 13.3.** Multipass won't install. Use **Path D**, or
-if you want a local VM: **UTM** (<https://mac.getutm.app/>) with the
+**macOS older than 13.3.** Multipass won't install. Use a local VM
+instead: **UTM** (<https://mac.getutm.app/>) with the
 Ubuntu Server 24.04 ISO — on Apple Silicon the **arm64** ISO from
 <https://cdimage.ubuntu.com/releases/24.04/release/> (use *Virtualize*,
 never *Emulate*); on Intel the amd64 ISO from
@@ -525,9 +492,6 @@ relaunch: `multipass delete comp3100 && multipass purge`.
   equivalently re-run `bash setup/wsl2-setup.sh` from the repo — it's
   idempotent).
 - **Path C:** re-run your distro's install line from the Path C list.
-- **Path D:** re-run the container's provisioner, which also restores
-  the manual pages the base image strips:
-  `sudo bash .devcontainer/provision.sh`
 
 The patch-in-place package list (Paths A/B) — the same set the config
 installs:
@@ -569,9 +533,8 @@ Troubleshooting for the one quirk in how you invoke `perf`.)
 **A.** Docker is great for application development. For an OS course,
 its containerized `/proc` view, its own PID 1, and the capability flags
 needed just to run `strace` get in the way of the very things you're
-learning about. WSL2 and the VM are unmuddied. (Path D's devcontainer
-accepts these compromises deliberately, as an escape hatch — its lab
-alternates account for them.)
+learning about. WSL2 and the VM are unmuddied, and that is worth more
+here than the convenience a container would buy you.
 
 **Q. Why not just SSH into a department server?**
 **A.** Some semesters there is one and you can. Your own environment
