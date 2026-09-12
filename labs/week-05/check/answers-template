@@ -1,0 +1,37 @@
+# Work Order No. 1851-05 -- bench answers. Fill in after each colon.
+# Copy me first, from labs/week-05:   cp check/answers-template check/answers.txt
+# The seal checks (make -C check m1, m2, m3) read check/answers.txt -- this
+# template stays untouched. Lines starting with # are notes, not answers.
+#
+# Keep each answer on its ONE labelled line. Every check reads the line that
+# starts with its label and nothing else, so a second line of working notes
+# is fine here but will not be read.
+
+# A1 (Task 1) -- the two entry counts from an UNGUARDED run: what loom north
+# wove, and what loom south wove. Both numbers on this one line, e.g.:
+#   A1: north NNNNNN, south NNNNNN
+A1:
+
+# A2 (Task 1) -- the "ledger total" line from two DIFFERENT unguarded runs.
+# Both numbers on this one line. They will not be the same number, and that
+# is the result, not a problem with it.
+A2:
+
+# A3 (Task 2) -- the "ledger total" your GUARDED build printed. One number.
+A3:
+
+# A4 (Task 3) -- the two row labels that differ between the Engine's Table IX
+# and the fair copy. A row's label is the words before the row of dots.
+# Both labels on this one line, spelled as the ledger prints them.
+A4:
+
+# A5 (Task 3) -- the total you worked out yourself from the four district
+# figures in the working papers, added exactly as the papers write them.
+#
+#   NOT ROUNDED. Give every decimal place your own addition produced -- the
+#   working papers carry one more place than the ledger row prints, so their
+#   sum carries it too, and that last place is what this slot is for. The
+#   rounded figure is a separate number and it belongs in your logbook.
+#
+# The figure only, e.g. 123.456
+A5:

@@ -5,6 +5,11 @@ labs/week-02/starter/hello-brassbridge
 labs/week-02/starter/hello-brassbridge-vg
 labs/week-03/starter/pantograph
 labs/week-03/starter/zombie-maker
+labs/week-05/starter/twin-looms
+labs/week-06/starter/interlocking
+labs/week-06/starter/sorting-floor
+labs/week-06/starter/ledger-hall
+labs/week-06/starter/philosophers
 
 # Course PDFs are distributed through Canvas and zyBooks, not through git.
 *.pdf
