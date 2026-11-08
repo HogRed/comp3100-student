@@ -1,0 +1,61 @@
+# Work Order No. 1851-13 -- bench answers. Fill in after each colon.
+# Copy me first, from labs/week-13:   cp check/answers-template check/answers.txt
+# The seal checks (make -C check m1 ... m4) read check/answers.txt -- this
+# template stays untouched. Lines starting with # are notes, not answers.
+#
+# Keep each answer on its ONE labelled line. Every check reads the line that
+# starts with its label and nothing else, so a second line of working notes
+# is fine here but will not be read.
+#
+# Where a slot wants more than one number, put them all on the one line,
+# with SPACES between them. A comma is read as part of a figure (1,024 and
+# 1024 are one number, everywhere), so 7,1 would be read as 71 -- even
+# where your screen prints a comma between two numbers, write a space.
+# Some answers are read from YOUR bench at check time: copy them from your
+# own screen, never from anybody else's. Every answer here is a count, a
+# number, a mode string or a date. None of them is a name.
+
+# A1 (Task 1) -- your uid, then your primary gid, as id prints them at the
+# front of its line. Two numbers.
+A1:
+
+# A2 (Task 1) -- the ls -l mode string of the file you chmod 640'd (ten
+# characters, the first one included), then its octal mode. E.g.:
+#   A2: <ten characters> <octal>
+A2:
+
+# A3 (Task 1) -- in /etc/passwd: the field number of the login shell, then
+# the field number of the primary gid. Two numbers.
+A3:
+
+# A4 (Task 2) -- the spare key's type and permissions as ls -l prints them
+# (ten characters), then the uid that owns it, as ls -n prints it. E.g.:
+#   A4: <ten characters> <uid>
+A4:
+
+# A5 (Task 2) -- your effective uid as id -u prints it straight after you
+# run the spare key, then the uid sudo id prints (the number after uid=).
+# Two numbers.
+A5:
+
+# A6 (Task 3) -- how many files find "$HOME" -perm -4000 lists, then the
+# name of the one under registry/, as ls prints it.
+A6:
+
+# A7 (Task 3) -- how many lines of the Warden's log carry key=1849, whatever
+# their last word. One number.
+A7:
+
+# A8 (Task 3) -- the earliest date in the Warden's log, then the latest, as
+# the log writes them (year-month-day). Two dates.
+A8:
+
+# A9 (Task 4) -- how many of the log's session openings fall inside a
+# documented visit: after a visit's IN and before its OUT, on the same day.
+# One number.
+A9:
+
+# A10 (Task 4) -- how many times the key shown most often in the log (the top
+# row of Task 3's tally) falls inside a documented visit, counted the same
+# way. One number.
+A10:
