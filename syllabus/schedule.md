@@ -19,7 +19,7 @@ changes will be changed here first and announced in class and on Canvas.
 | **Wednesday & Friday** | Studio. You work the work order at your own machine; the instructor circulates. |
 | **Sunday, 11:59 pm** | **Work order deliverables due on Canvas:** your `logbook.md` for the week (wax seals pasted in) plus your updated running `case-notes.md`. |
 
-Commissions (the five department projects) are **submitted in zyBooks**,
+Commissions (four of the department's projects) are **submitted in zyBooks**,
 not Canvas, and are due at **11:59 pm** on the date listed below.
 
 ## Three calendar facts worth circling now
@@ -55,10 +55,10 @@ reading. The last deadline of the semester is Friday, December 4.
 | 8 | Oct 5 – 9 | **Guild Examination I** | Mon: review · **Wed Oct 7: Exam I (Ch 1–5)** · Fri: open HUSH workshop | — | *(no work order this week)* | HUSH workshop, Fri Oct 9 |
 | 9 | Oct 12 – 16 | **The Store** | Memory management: `malloc`, process memory layout, `valgrind` | Ch 6 | Work Order 09 | **HUSH due** (Fri Oct 16) · **Regular Expressions assigned** (12.3) |
 | 10 | Oct 19 – 23 | **The Phantom Store** | Virtual memory: paging, `/proc/<pid>/maps`, `mmap`, page faults | Ch 7 | Work Order 10 | — |
-| 11 | Oct 26 – 30 | **The Ledger Halls** | File systems: inodes, links, mounts, loop-mounting a disk image, recovering deleted files | Ch 8 | Work Order 11 | **Versioning assigned** (12.5) |
+| 11 | Oct 26 – 30 | **The Ledger Halls** | File systems: inodes, links, mounts, loop-mounting a disk image, recovering deleted files | Ch 8 | Work Order 11 | ~~Versioning assigned~~ (12.5) — *withdrawn Nov 9* |
 | 12 | Nov 2 – 6 | **The Pneumatic Post** | Applied I/O: pipes, redirection, `/dev`, FIFOs | — *(Ch 9 optional)* | Work Order 12 | **Regular Expressions due** (Fri Nov 6) |
 | 13 | Nov 9 – 13 | **The Brass Keys** | Applied security: users and groups, permissions, `setuid`, `sudo`, authentication logs | — *(Ch 10 optional)* | Work Order 13 | **A Good Sport assigned** (12.4) |
-| 14 | Nov 16 – 20 | **The Aetheric Exchange** | Ports and sockets: auditing every listening service with `ss`/`netstat` | — *(Ch 11 optional)* | Work Order 14 | **Versioning due** (Fri Nov 20) |
+| 14 | Nov 16 – 20 | **The Aetheric Exchange** | Ports and sockets: auditing every listening service with `ss`/`netstat` | — *(Ch 11 optional)* | Work Order 14 | — |
 | — | Nov 23 – 27 | *Thanksgiving break — the Engine rests* | No class, nothing due | — | — | — |
 | 15 | Nov 30 – Dec 4 | **The Reveal & the Exhibition** | Mon: sealed verdicts collected · Wed: the finale and the reveal · Fri: epilogue and the Exhibition (last class) | — | Work Order 15 — **due Fri Dec 4** (last class) · **sealed verdict due Mon Nov 30, start of class** | **A Good Sport due** (Fri Dec 4) |
 | Finals | Dec 7 – 11 | **Guild Examination II** | Final exam: Ch 6–8 plus the applied weeks (12–14), lightly | — | *(nothing due — the exam only)* | — |
@@ -80,26 +80,26 @@ break. That number is what the professionalism component in
 
 ---
 
-## The five Guild Commissions at a glance
+## The four Guild Commissions at a glance
 
 These are the department's own projects, unmodified. Dr. Foust's spec is
 authoritative for each one; the course adds only a cover page and the
-calendar placement below. **All five are submitted in zyBooks.**
+calendar placement below. **All four are submitted in zyBooks.**
 
 | # | zyBooks | Project | In-fiction name | Assigned | Due (11:59 pm) |
 |---|---|---|---|---|---|
 | 1 | 12.1 | Mr. Kureos | *The Census of the Enginehouse* | Mon Aug 24 (Wk 2) | **Fri Sep 18** (Wk 5) |
 | 2 | 12.2 | HUSH | *The Speaking-Tube Console* | Mon Sep 14 (Wk 5) | **Fri Oct 16** (Wk 9) |
 | 3 | 12.3 | Regular Expressions | *The Pattern Loom* | Mon Oct 12 (Wk 9) | **Fri Nov 6** (Wk 12) |
-| 4 | 12.5 | Simple Versioning System | *The Revision Registry* | Mon Oct 26 (Wk 11) | **Fri Nov 20** (Wk 14) |
-| 5 | 12.4 | A Good Sport | *The Exchange Audit* | Mon Nov 9 (Wk 13) | **Fri Dec 4** (Wk 15) |
+| 4 | 12.4 | A Good Sport | *The Exchange Audit* | Mon Nov 9 (Wk 13) | **Fri Dec 4** (Wk 15) |
+| — | 12.5 | ~~Simple Versioning System~~ | ~~*The Revision Registry*~~ | Mon Oct 26 (Wk 11) | **Withdrawn** Nov 9 — nothing to submit |
 
 An **open HUSH workshop** runs Friday, Oct 9 — bring your half-finished
-shell and questions. The last two commissions run long on purpose: they
-run through the applied weeks (12–15), which carry no required reading,
-so the load moves from the reading to the projects. Each gets about
-twenty-five days, and they land a fortnight apart — **neither one falls
-in finals week**, where nothing is due but Exam II.
+shell and questions. The last commission runs long on purpose: it runs
+through the applied weeks (13–15), which carry no required reading, so
+the load moves from the reading to the project. It gets about
+twenty-five days, and **it does not fall in finals week**, where nothing
+is due but Exam II.
 
 ## Exams
 

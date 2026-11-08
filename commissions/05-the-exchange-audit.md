@@ -1,4 +1,4 @@
-# COMMISSION No. V of 1851 — Honourable Guild of Enginewrights
+# COMMISSION No. IV of 1851 — Honourable Guild of Enginewrights
 
 *Ex Vapore, Ordo — "From steam, order."*
 
@@ -6,11 +6,11 @@
 |---|---|
 | **To** | The Apprentice Cohort of 1851, at their benches |
 | **From** | By hand of **Chief Enginewright B. Marlowe** |
-| **Commission** | ***The Exchange Audit*** — the last of five |
+| **Commission** | ***The Exchange Audit*** — the last of four |
 | **Filed in the department's book as** | **zyBooks 12.4, "A Good Sport"** |
 | **Assigned** | Monday, 9 November 1851 *(Week 13)* — four weeks to the Exhibition |
 | **Due** | **Friday, December 4, 11:59 pm** *(Week 15)* — **submitted in zyBooks**, not Canvas |
-| **Worth** | 4% of the semester |
+| **Worth** | 5% of the semester |
 
 ---
 

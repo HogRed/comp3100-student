@@ -1,4 +1,10 @@
-# COMMISSION No. IV of 1851 — Honourable Guild of Enginewrights
+> **WITHDRAWN, Monday 9 November.** This commission is cancelled: there is
+> nothing to submit for zyBooks 12.5 and no grade for it. Commission IV is
+> now *The Exchange Audit*
+> ([`05-the-exchange-audit.md`](05-the-exchange-audit.md)), due Friday,
+> December 4. The page below is kept for the record only.
+
+# ~~COMMISSION No. IV of 1851~~ — WITHDRAWN
 
 *Ex Vapore, Ordo — "From steam, order."*
 

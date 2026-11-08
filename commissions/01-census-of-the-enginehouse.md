@@ -6,11 +6,11 @@
 |---|---|
 | **To** | The Apprentice Cohort of 1851, at their benches |
 | **From** | By hand of **Chief Enginewright B. Marlowe** |
-| **Commission** | ***The Census of the Enginehouse*** — the first of five |
+| **Commission** | ***The Census of the Enginehouse*** — the first of four |
 | **Filed in the department's book as** | **zyBooks 12.1, "Mr. Kureos"** |
 | **Assigned** | Monday, 24 August 1851 *(Week 2)* — fifteen weeks to the Exhibition |
 | **Due** | **Friday, September 18, 11:59 pm** *(Week 5)* — **submitted in zyBooks**, not Canvas |
-| **Worth** | 4% of the semester |
+| **Worth** | 5% of the semester |
 
 ---
 

@@ -6,11 +6,11 @@
 |---|---|
 | **To** | The Apprentice Cohort of 1851, at their benches |
 | **From** | By hand of **Chief Enginewright B. Marlowe** |
-| **Commission** | ***The Speaking-Tube Console*** — the second of five |
+| **Commission** | ***The Speaking-Tube Console*** — the second of four |
 | **Filed in the department's book as** | **zyBooks 12.2, "HUSH"** |
 | **Assigned** | Monday, 14 September 1851 *(Week 5)* |
 | **Due** | **Friday, October 16, 11:59 pm** *(Week 9)* — **submitted in zyBooks**, not Canvas |
-| **Worth** | 4% of the semester |
+| **Worth** | 5% of the semester |
 
 ---
 

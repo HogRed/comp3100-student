@@ -6,11 +6,11 @@
 |---|---|
 | **To** | The Apprentice Cohort of 1851, at their benches |
 | **From** | By hand of **Chief Enginewright B. Marlowe** |
-| **Commission** | ***The Pattern Loom*** — the third of five |
+| **Commission** | ***The Pattern Loom*** — the third of four |
 | **Filed in the department's book as** | **zyBooks 12.3, "Regular Expressions"** |
 | **Assigned** | Monday, 12 October 1851 *(Week 9)* — eight weeks to the Exhibition |
 | **Due** | **Friday, November 6, 11:59 pm** *(Week 12)* — **submitted in zyBooks**, not Canvas |
-| **Worth** | 4% of the semester |
+| **Worth** | 5% of the semester |
 
 ---
 

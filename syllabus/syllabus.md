@@ -13,7 +13,7 @@
 | **Office hours** | Mon / Wed 7–8 am, 9–10 am, 12–1 pm, 2–3 pm · Tue 9–11 am · Fri 9–10 am, 12–1 pm, 2–3 pm · Thu by appointment |
 | **Course site** | **Canvas** — announcements, assignments, grades, and the zyBooks and student-repo links |
 | **Textbook** | zyBooks — enrollment link and join code in Canvas |
-| **Submission** | Weekly work orders → **Canvas** · The five commissions → **zyBooks** |
+| **Submission** | Weekly work orders → **Canvas** · The four commissions → **zyBooks** |
 | **Final exam** | Finals week, Dec 7–11 — slot set by the registrar, announced in class and posted in Canvas |
 | **Dates** | [`schedule.md`](schedule.md) — the authoritative list of every due date |
 
@@ -46,7 +46,7 @@ The course is hands-on. Every week you work on a real Ubuntu 24.04
 system, with real tools — `strace`, `gdb`, `valgrind`, `pstree`, `ss`,
 `mount` — on problems that have real symptoms. All of it aims at one
 very practical ability: to walk up to a machine that is misbehaving and
-find out why, instead of guessing. You will also complete five
+find out why, instead of guessing. You will also complete four
 programming projects in Python, assigned and graded through zyBooks,
 which are the department's standard COMP 3100 projects.
 
@@ -106,8 +106,8 @@ August 19.
 - **Chapters 9–11 are optional enrichment.** Weeks 12–14 draw on their
   topics, but the lectures and work orders are self-contained; nothing
   from Ch 9–11 is required reading and nothing there is graded.
-- **Chapter 12 holds the five projects** you will submit as the Guild
-  Commissions.
+- **Chapter 12 holds the department's projects**; four of them are the
+  Guild Commissions you submit.
 
 **Optional — Andrew S. Tanenbaum, *Modern Operating Systems*, 4th
 edition.** An excellent reference and a good read if a topic grabs you.
@@ -182,7 +182,7 @@ no points and exists purely for fun.
   means. It is graded on being kept honestly and thoughtfully, never on
   reaching the "right" conclusion early.
 
-**Five times a semester (zyBooks):** a Guild Commission — one of the
+**Four times a semester (zyBooks):** a Guild Commission — one of the
 department's Python projects, unmodified. Dr. Foust's published spec is
 authoritative for each; the course adds only a cover page and a place on
 the calendar. Assigned and due dates are in
@@ -205,7 +205,7 @@ cite, not on landing the answer.
 |---|---|---|
 | **Work orders** (weekly labs) | **35%** | Fourteen graded work orders — one per week except exam week — **equally weighted, none dropped**. Each is scored **30% wax seals** (pasted under the right milestones — these are completion checks, and a documented environment fight with my sign-off still earns them) and **70% prose**, on a short rubric: correctness of your findings, quality of your reasoning, and the reflection. |
 | **Guild Examinations** | **30%** | Exam I 15% (Week 8) · Exam II 15% (finals week). |
-| **Guild Commissions** (5 projects) | **20%** | 4% each, graded in zyBooks per department practice. |
+| **Guild Commissions** (4 projects) | **20%** | 5% each, graded in zyBooks per department practice. |
 | **zyBooks reading** | **10%** | Chapter 1–8 participation and challenge activities, due before each Wednesday. |
 | **Professionalism** | **5%** | Attendance and studio participation, on the published rubric under [Attendance and professionalism](#attendance-and-professionalism). |
 
@@ -262,7 +262,7 @@ score. They are open a full week ahead of when they are due, they are
 worth 10% of your grade in aggregate, and no single one of them can
 hurt you much. Do them Sunday and forget about them.
 
-*(The five Guild Commissions are also submitted in zyBooks, but they are
+*(The four Guild Commissions are also submitted in zyBooks, but they are
 **not** covered by that rule — they get the ordinary two-day window
 above, same as a work order.)*
 
@@ -351,7 +351,7 @@ went past you, exam study — and for the commissions, which is exactly
 why a week with a commission due runs heavier. The commissions are
 assigned two to five weeks ahead for that reason. Check
 [`schedule.md`](schedule.md) at the start of the semester and put the
-five commission due dates in your own calendar.
+four commission due dates in your own calendar.
 
 ## Academic integrity
 

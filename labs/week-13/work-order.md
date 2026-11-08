@@ -1498,12 +1498,13 @@ Task 3 is objectives 4 and 5 (the whole bench, then the Warden's log); Task
 - **No required reading this week.** zyBooks **Ch 10** (security) is
   optional; 10.2 (user authentication) and 10.3 (access control) are the
   sections nearest this week's work.
-- **Commission V — *The Exchange Audit*** (zyBooks 12.4, "A Good Sport") is
-  assigned today, **Monday, 9 November**.
-- **Commission IV — *The Revision Registry*** (zyBooks 12.5, "Simple
-  Versioning System") is due **Friday, 20 November, 11:59 pm, in zyBooks**
-  — not Canvas. The cover is at
-  [`commissions/04-the-revision-registry.md`](../../commissions/04-the-revision-registry.md).
+- **Commission IV — *The Exchange Audit*** (zyBooks 12.4, "A Good Sport") is
+  assigned today, **Monday, 9 November**, and due **Friday, 4 December,
+  11:59 pm, in zyBooks** — not Canvas. It is the last commission. The cover
+  is at [`commissions/05-the-exchange-audit.md`](../../commissions/05-the-exchange-audit.md).
+- **Versioning is withdrawn.** zyBooks 12.5 ("Simple Versioning System",
+  *The Revision Registry*) is cancelled: nothing to submit, no grade. The
+  four commissions are now worth 5% each.
 
 > `SUBMISSION: EXPECTED BY SUNDAY 11:59 PM.`
 > `WAX SEALS: FOUR. THREE SESSIONS. NO BREAK.`
