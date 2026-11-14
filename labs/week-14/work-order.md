@@ -329,7 +329,7 @@ below can be typed exactly as printed, then check it is free:
 
 ```sh
 P=47450
-ss -tln | grep ":$P "
+ss -tln | grep -w "$P"
 ```
 
 Expected — nothing at all. Nothing printed means nothing holds that port.
@@ -393,8 +393,8 @@ tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      
 ```
 
 Read the first two lines: `netstat` says outright that it is leaving some
-programs out. A `-` in the **PID/Program name** column is a program that is
-not yours. (This is the header the Sport spec shows, word for word.)
+programs out. A `-` in the **PID/Program name** column means `netstat` did
+not identify the program: here, because it is not yours. (This is the header the Sport spec shows, word for word.)
 
 **Checkpoint (halfway).** Say, without looking: what a port is and what a
 socket is; what `-t`, `-l`, `-n` and `-p` each ask `ss` for; and why your
@@ -430,7 +430,7 @@ Bash says the job is **Stopped** and gives you your prompt back. A stopped
 process is frozen, not gone, and its connection stays open. Now:
 
 ```sh
-ss -tn | grep ":$P "
+ss -tn | grep -w "$P"
 ```
 
 (`-l` is gone: this asks for connections, not listeners.) Expected — the
@@ -452,7 +452,7 @@ State is `ESTAB`, short for **established**: a connection in use. `netstat`
 spells the word out:
 
 ```sh
-netstat -tn | grep ":$P "
+netstat -tn | grep -w "$P"
 ```
 
 Expected:
@@ -467,8 +467,8 @@ Terminal A's `nc` ends with it: a server that `nc -l` started serves one
 connection and stops. Then, in either terminal:
 
 ```sh
-ss -tln | grep ":$P "
-ss -tan | grep ":$P "
+ss -tln | grep -w "$P"
+ss -tan | grep -w "$P"
 ```
 
 Expected — the first prints nothing: your listener has left the table.
@@ -522,7 +522,7 @@ saying what it shows.
 > - `make: *** check: No such file or directory`? You are not in
 >   `labs/week-14`. Run the P2 `cd` line that matches your setup, then
 >   `make -C check m1` again.
-> - `ss -tln | grep ":$P "` printed nothing, but so does everything after
+> - `ss -tln | grep -w "$P"` printed nothing, but so does everything after
 >   it? `P` is not set in this terminal. Run `echo "$P"`; if it prints an
 >   empty line, set it again: `P=` and your number, no spaces.
 > - `nc: Address already in use`? Something holds that port. Choose another
@@ -593,9 +593,9 @@ judgment of the rows.)
 knows where to knock: 22 for remote logins, 53 for the **domain name
 service** (the service that turns names like `harding.edu` into
 addresses), 80 for web servers. Ports 0 to 1023 are called **well-known**;
-1024 to 49151 are **registered**; above that, the dynamic range. (Linux draws
-its own line lower, at 32768, as Task 1 showed: the two lists disagree, and
-this week follows Linux's.) The bench
+1024 to 49151 are **registered**; above that, the dynamic range. (*A Good
+Sport* draws its own line lower, at 32768, as Task 1 showed: the two lists
+disagree, and this week follows the Sport's.) The bench
 keeps the agreed list in a plain file, `/etc/services`. Ask it about the two
 ports in your table:
 
