@@ -20,6 +20,7 @@ packages:
   - ltrace         # library-call tracer; Week 2's "For the curious" box
                    # uses it to show printf(3) sitting on top of write(2)
   - lsof
+  - net-tools       # netstat; Week 14 and Commission IV (A Good Sport)
   - psmisc          # pstree, fuser, killall
   - procps          # ps, top, free, vmstat, uptime (usually already there)
   - htop

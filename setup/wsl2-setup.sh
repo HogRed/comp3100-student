@@ -73,7 +73,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
   build-essential gdb valgrind pkg-config \
   man-db manpages manpages-dev \
   vim nano tmux tree file less curl git unzip \
-  e2fsprogs util-linux cron
+  e2fsprogs util-linux net-tools cron
 
 # POSIX man pages (multiverse) -- Work Order 01, Task 3 runs `whatis write` and
 # expects four rows; write(1posix) and write(3posix) come from this package.
@@ -138,7 +138,7 @@ fi
 echo
 echo "== done -- tool check =="
 miss=0
-for t in gcc g++ make gdb strace ltrace valgrind pkg-config mkfs.ext4 debugfs man; do
+for t in gcc g++ make gdb strace ltrace valgrind pkg-config mkfs.ext4 debugfs netstat man; do
   if command -v "$t" >/dev/null 2>&1; then
     printf '  ok   %s\n' "$t"
   else

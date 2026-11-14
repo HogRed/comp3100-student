@@ -39,6 +39,7 @@ packages:
   # the OS-observability tools the labs use
   - strace
   - lsof
+  - net-tools       # netstat; Week 14 and Commission IV (A Good Sport)
   - psmisc          # pstree, fuser, killall
   - procps          # ps, top, free, vmstat, uptime (usually already there)
   - htop

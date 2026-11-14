@@ -266,6 +266,10 @@ hurt you much. Do them Sunday and forget about them.
 **not** covered by that rule — they get the ordinary two-day window
 above, same as a work order.)*
 
+**Work Order 15 is firm, too.** It is due Sunday, December 6, and has
+**no late window**: finals week begins the next day, and nothing is due
+in it.
+
 **When life actually goes wrong.** If illness, a family emergency, or a
 university-sponsored absence is going to cost you a deadline, email me
 **before the deadline when you can and as soon as you possibly can when

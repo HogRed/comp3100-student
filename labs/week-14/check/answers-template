@@ -1,0 +1,55 @@
+# Work Order No. 1851-14 -- bench answers. Fill in after each colon.
+# Copy me first, from labs/week-14:   cp check/answers-template check/answers.txt
+# The seal checks (make -C check m1 ... m4) read check/answers.txt -- this
+# template stays untouched. Lines starting with # are notes, not answers.
+#
+# Keep each answer on its ONE labelled line. Every check reads the line that
+# starts with its label and nothing else, so a second line of working notes
+# is fine here but will not be read.
+#
+# Where a slot wants more than one number, put them all on the one line,
+# with SPACES between them. A comma is read as part of a figure (1,024 and
+# 1024 are one number, everywhere), so 5,0 would be read as 50 -- even
+# where your screen prints a comma between two numbers, write a space.
+# Some answers are read from YOUR bench at check time: copy them from your
+# own screen, never from anybody else's. Every answer here is a number, an
+# address, a State word or a date. None of them is a name.
+
+# A1 (Task 1) -- the port your own nc -l listened on: the one you chose,
+# at 32768 or above, after checking with ss that it was free. One number.
+A1:
+
+# A2 (Task 1) -- the word ss -tn printed in the State column for your
+# connection while terminal B was still connected. One word.
+A2:
+
+# A3 (Task 2) -- the address the listener nobody on this bench started is
+# bound to, as ss prints it in front of the colon. Four numbers with dots.
+A3:
+
+# A4 (Task 2) -- that listener's port, the number after the last colon.
+# One number.
+A4:
+
+# A5 (Task 2) -- the uid that listener runs as, as ps -o uid prints it.
+# One number (not its pid).
+A5:
+
+# A6 (Task 3) -- how many dispatches were waiting in outbound-queue/.
+# One number.
+A6:
+
+# A7 (Task 3) -- the date the dispatches are held until, as a dispatch's
+# first line prints it (the words after HOLD UNTIL, before the comma).
+A7:
+
+# A8 (Task 3) -- the port's answer, before you moved anything: dispatches
+# queued, then acknowledgments received. Two numbers.
+A8:
+
+# A9 (Task 4) -- dispatches queued, as the port says it after you stayed
+# the queue by the procedure. One number.
+A9:
+
+# A10 (Task 4) -- how many papers are in held/ now. One number.
+A10:

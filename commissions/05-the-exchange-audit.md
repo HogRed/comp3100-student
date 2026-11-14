@@ -122,7 +122,8 @@ deliberately bad ones) and see what the auditor makes of them. Switch
 to the real `subprocess.run` call once the sorting is right. Lines are
 separated by `\n` only.
 
-**Read the register yourself first.** Run `netstat -anpt` at the
+**Read the register yourself first.** If `netstat` is not found, install
+it once: `sudo apt install -y net-tools`. Run `netstat -anpt` at the
 prompt and look at what it prints before you write a line of Python. See
 which column holds the state, which holds the address, and what
 the last column looks like for a line that is not yours (the PID and
